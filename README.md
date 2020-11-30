@@ -1,4 +1,4 @@
-<h1 align="center">DevChallenges - My Gallery</h1>
+<h1 align="center">DevChallenges - Checkout Page</h1>
 
 <div align="center">
    Solution for a challenge from <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -6,15 +6,15 @@
 
 <div align="center">
   <h3>
-    <a href="https://devchallenges-my-gallery.vercel.app/">
+    <a href="https://devchallenges-checkout-page.vercel.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/FARCER/devchallenges-my-gallery">
+    <a href="https://github.com/FARCER/devchallenges-Checkout-Page">
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/gcbWLxG6wdennelX7b8I">
+    <a href="https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO">
       Challenge
     </a>
   </h3>
@@ -44,7 +44,7 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 ### Built With
 
-HTML, CSS
+HTML, CSS, JavaScript
 
 ## Features
 
