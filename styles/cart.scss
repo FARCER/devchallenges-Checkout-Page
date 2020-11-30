@@ -1,0 +1,29 @@
+.cart {
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.cart-amount {
+  margin-top: 100px;
+
+  &__row {
+    align-items: center;
+    border-top: 1px solid #bdbdbd;
+    color: #333333;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+  &__label {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .cart {
+    order: 1;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+}

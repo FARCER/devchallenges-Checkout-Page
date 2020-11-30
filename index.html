@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	      rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+	<div class="content">
+		<h1>Checkout</h1>
+		<main class="main">
+			<div class="form-wrapper">
+				<form action="" class="form">
+					<div class="form-block">
+						<h2 class="form-block__title">Contact information</h2>
+						<div class="form-group">
+							<label for="email">E-mail</label>
+							<div class="form-group__field">
+								<span class="material-icons form-group__icon">email</span>
+								<input type="text"
+								       id="email"
+								       required
+								       placeholder="Enter your email..."
+								>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="phone">Phone</label>
+							<div class="form-group__field">
+								<span class="material-icons form-group__icon">call</span>
+								<input type="tel"
+								       required
+								       id="phone"
+								       placeholder="Enter your phone..."
+								>
+							</div>
+						</div>
+					</div>
+					<div class="form-block">
+						<h2 class="form-block__title">Shipping address</h2>
+						<div class="form-group">
+							<label for="name">Full name</label>
+							<div class="form-group__field">
+								<span class="material-icons form-group__icon">account_circleail</span>
+								<input type="text"
+								       id="name"
+								       required
+								       placeholder="Enter your full name..."
+								>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="address">Address</label>
+							<div class="form-group__field">
+								<span class="material-icons form-group__icon">home</span>
+								<input type="text"
+								       id="address"
+								       placeholder="Enter address..."
+								>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="city">City</label>
+							<div class="form-group__field">
+								<span class="material-icons form-group__icon">location_city</span>
+								<input type="text"
+								       id="city"
+								       placeholder="Enter city..."
+								>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group">
+								<label for="country">Country</label>
+								<div class="form-group__field">
+									<span class="material-icons form-group__icon">public</span>
+									<select name="" id="country">
+										<option value="" disabled selected>Your country..</option>
+										<option value="russia">Russia</option>
+										<option value="usa">USA</option>
+										<option value="canada">Canada</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="postal_code">Postal code</label>
+
+								<div class="form-group__field">
+									<span class="material-icons form-group__icon">markunread_mailbox</span>
+									<input type="text"
+									       id="postal_code"
+									       placeholder="Your postal code.."
+									>
+								</div>
+							</div>
+						</div>
+						<label for="save" class="checkbox">
+							<input type="checkbox" id="save">
+							<span class="checkbox__text">Save this information for next time</span>
+							<div class="checkbox__custom"></div>
+						</label>
+						<div class="form__footer">
+							<button type="submit" class="form__submit-btn">Continue...</button>
+						</div>
+					</div>
+				</form>
+				<div class="form-success">
+					Form success sent!
+				</div>
+			</div>
+			<div class="cart">
+				<div class="cart__products">
+					<div class="product">
+						<div class="product__photo" style="background-image: url('photo1.png')"></div>
+						<div class="product__info">
+							<span class="product__name">Vintage Backbag</span>
+							<div class="product-price">
+								<span class="product-price__current">$54.99</span>
+								<span class="product-price__old">$94.99</span>
+							</div>
+							<div class="product__counter">
+								<div class="counter">
+									<button class="counter__btn" data-direction="down">
+										<span class="material-icons">remove</span>
+									</button>
+									<span class="counter__value">1</span>
+									<button class="counter__btn" data-direction="up">
+										<span class="material-icons">add</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product__photo" style="background-image: url('photo2.png')"></div>
+						<div class="product__info">
+							<span class="product__name">Levi Shoes</span>
+							<div class="product-price">
+								<span class="product-price__current">$74.99</span>
+								<span class="product-price__old">$124.99</span>
+							</div>
+							<div class="product__counter">
+								<div class="counter">
+									<button class="counter__btn" data-direction="down">
+										<span class="material-icons">remove</span>
+									</button>
+									<span class="counter__value">1</span>
+									<button class="counter__btn" data-direction="up">
+										<span class="material-icons">add</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cart-amount">
+					<div class="cart-amount__row">
+						<span class="cart-amount__label">Shipping</span>
+						<span class="cart-amount__value">$19</span>
+					</div>
+
+					<div class="cart-amount__row">
+						<span class="cart-amount__label">Total</span>
+						<span class="cart-amount__value" id="total-amount">$148.98</span>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<footer>
+		<div class="footer">
+			<div class="copyright">Anatoliy Salamatin @ DevChallenges.io</div>
+		</div>
+	</footer>
+	<script src="main.js"></script>
+</div>
+</body>
+</html>
